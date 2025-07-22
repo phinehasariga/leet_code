@@ -1,6 +1,6 @@
 class Solution {
     public int findNumbers(int[] nums) {
-                int count = 0;
+        int count = 0;
         for (int num : nums) {
             if (hasEvenDigits(num)) {
                 count++;
@@ -10,9 +10,9 @@ class Solution {
     }
     
     private boolean hasEvenDigits(int num) {
-        // Handle negative numbers by taking absolute value
+
         num = Math.abs(num);
-        // Count the number of digits
+
         int digitCount = 0;
         if (num == 0) {
             digitCount = 1;
