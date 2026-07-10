@@ -3,12 +3,11 @@ class Solution {
         if(x < 0){
             return false;
         }
+        int n = x;
         int reversed = 0;
-        int num = x;
-        while(num > 0){
-            int digit = num % 10;
-            num/=10;
-            reversed = reversed * 10 + digit;
+        while(n > 0){
+            reversed = reversed * 10 + (n % 10);
+            n /= 10;
         }
         return x == reversed;
     }
